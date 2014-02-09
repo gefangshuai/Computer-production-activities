@@ -3,108 +3,172 @@
   <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="resources/css/bootstrap.css" />
+    <link rel="stylesheet" href="resources/css/site.min.css" />
     <link rel="stylesheet" href="resources/css/custom.css" />
     <script src="resources/js/jquery.js" type="text/javascript" charset="utf-8"></script>
     <script src="resources/js/bootstrap.js" type="text/javascript" charset="UTF-8"></script>
-
     <script type="text/javascript" src="resources/thirdpart/fancybox/jquery.mousewheel-3.0.4.pack.js"></script>
-    <link rel="stylesheet" href="resources/thirdpart/fancybox/jquery.fancybox-1.3.4.css" type="text/css" media="screen" />
-    <script type="text/javascript" src="resources/thirdpart/fancybox/jquery.fancybox-1.3.4.pack.js"></script>
-    <script type="text/javascript" src="resources/thirdpart/fancybox/jquery.fancybox-1.3.4.js"></script>
+    <script type="text/javascript" src="resources/js/handlebars.js"></script>
 
+    <link rel="stylesheet" href="resources/thirdpart/fancybox/jquery.fancybox-1.3.4.css" type="text/css" media="screen" />
   </head>
   <body>
     <audio src="resources/msc/music.mp3" autoplay="autoplay" hidden="hidden" loop="loop"></audio>
     <!-- header begin -->
-    <header class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-      <div class="navbar-header">
-        <a class="navbar-brand" href="#">感恩中国</a>
-      </div>
-      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-        <ul class="nav navbar-nav">
-          <li class="active">
-            <a href="#">首页</a>
-          </li>
-          <li>
-            <a href="second.html">照片展示</a>
-          </li>
-          <li class="dropdown">
-            <a href="#" class="dropdown-toggle" data-toggle="dropdown">下拉菜单 <b class="caret"></b></a>
-            <ul class="dropdown-menu">
-              <li>
-                <a href="#">Action</a>
-              </li>
-              <li>
-                <a href="#">Another action</a>
-              </li>
-              <li>
-                <a href="#">Something else here</a>
-              </li>
-              <li class="divider"></li>
-              <li>
-                <a href="#">Separated link</a>
-              </li>
-              <li class="divider"></li>
-              <li>
-                <a href="#">One more separated link</a>
-              </li>
-            </ul>
-          </li>
-        </ul>
-        <ul class="nav navbar-nav navbar-right">
-          <li>
-            <a href="#">右侧链接</a>
-          </li>
-          <li class="dropdown">
-            <a href="#" class="dropdown-toggle" data-toggle="dropdown">右侧下拉 <b class="caret"></b></a>
-            <ul class="dropdown-menu">
-              <li>
-                <a href="#">Action</a>
-              </li>
-              <li>
-                <a href="#">Another action</a>
-              </li>
-              <li>
-                <a href="#">Something else here</a>
-              </li>
-              <li class="divider"></li>
-              <li>
-                <a href="#">Separated link</a>
-              </li>
-            </ul>
-          </li>
-        </ul>
+    <header class="navbar navbar-default navbar-fixed-top" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <a class="navbar-brand" href="#">感恩中国</a>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav">
+            <li class="active">
+              <a href="#">首页</a>
+            </li>
+            <li>
+              <a href="second.html">照片展示</a>
+            </li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">下拉菜单 <b class="caret"></b></a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a href="#">Action</a>
+                </li>
+                <li>
+                  <a href="#">Another action</a>
+                </li>
+                <li>
+                  <a href="#">Something else here</a>
+                </li>
+                <li class="divider"></li>
+                <li>
+                  <a href="#">Separated link</a>
+                </li>
+                <li class="divider"></li>
+                <li>
+                  <a href="#">One more separated link</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
       </div>
     </header>
     <!-- header end -->
 
     <div class="jumbotron masthead">
-      <div class="container">
-        <h1>感恩中国</h1>
-        <p>
+      <div class="container" id="picContainer">
+        <h1>感  恩  中  国</h1>
+        <p> 
           感恩于心&nbsp;&nbsp;报恩于行&nbsp;&nbsp;但行好事&nbsp;&nbsp;莫问前程
         </p>
-
-        <div class="col-xs-6 col-md-3">
-          <a href="resources/thirdpart/flexslider/demo/1.jpg" class="thumbnail fancybox"> <img src="resources/thirdpart/flexslider/demo/1.jpg" /> </a>
-        </div>
-        <div class="col-xs-6 col-md-3">
-          <a href="resources/thirdpart/flexslider/demo/2.jpg" class="thumbnail fancybox"> <img src="resources/thirdpart/flexslider/demo/2.jpg" /> </a>
-        </div>
-        <div class="col-xs-6 col-md-3">
-          <a href="resources/thirdpart/flexslider/demo/3.jpg" class="thumbnail fancybox"> <img src="resources/thirdpart/flexslider/demo/3.jpg" /> </a>
-        </div>
-        <div class="col-xs-6 col-md-3">
-          <a href="resources/thirdpart/flexslider/demo/4.jpg" class="thumbnail fancybox"> <img src="resources/thirdpart/flexslider/demo/4.jpg" /> </a>
-        </div>
       </div>
     </div>
+    <div class="bc-social">
+      <div class="container">
+        <ul class="bc-social-buttons">
+          <li>
+            <span class="label label-success">Bootstrap开发QQ群: </span>1234567
+          </li>
+        </ul>
+      </div>
+    </div>
+    
+    <div class="projects-header page-header">
+      <h2>他们的事迹深深地打动着我们</h2>
+      <p>这些项目或者是对Bootstrap进行了有益的补充，或者是基于Bootstrap的</p>
+    </div>
 
+    <div class="row">
+      <div class="container">
+      <div class="display"></div>      
+      </div>
+    </div>
+    <script id="pic-template" type="text/x-handlebars-template">
+      <div class="row">
+      {{#pics}}
+      <div class="col-sm-6 col-md-4">
+        <div class="thumbnail">
+          <a href="resources/images/display/{{pic}}.jpg" class=" fancybox"> 
+            <img src="resources/images/display/{{pic}}.jpg" alt="图片无法显示"/> 
+          </a>
+          <div class="caption nolink" >
+            <a href="{{url}}">{{title}}</a>
+          </div>
+        </div>
+      </div>
+      {{/pics}}
+      </div>
+    </script>
     <script type="text/javascript" charset="utf-8">
-  		(function() {
-  			$(".fancybox").fancybox();
-  		})();
+      (function() {
+        
+        var source   = $("#pic-template").html();
+        var template = Handlebars.compile(source);
+
+        var data = {
+          pics: [
+            {
+              pic: 1, 
+              url: 'http://www.owecn.com/help/20130427/2013042722320.html', 
+              title: '长大后给爸爸妈妈幸福的家'
+            },
+            {
+              pic: 2,
+              url: 'http://www.owecn.com/Pieces/20090316/200903164649.html',
+              title: '我梦想着飞翔到更远的地方'
+            },
+            {
+              pic: 3,
+              url: 'http://www.owecn.com/Pieces/20070616/20070616806.html',
+              title: '路连向远方，改变了我们的生活！'
+            },
+            {
+              pic: 4,
+              url: 'http://www.owecn.com/Life/20140109/2014010926797.html',
+              title: '尤达村校：爱心是黎明前的一道曙光！'
+            },
+            {
+              pic: 5,
+              url: 'http://www.owecn.com/Life/20121118/2012111823803.html',
+              title: '花戛中学：给他们坚持读下去的力量'
+            },
+            {
+              pic: 6,
+              url: 'http://www.owecn.com/Life/20121115/2012111523815.html',
+              title: '福和希望小学：吃肉是孩子们的奢望'
+            },
+            {
+              pic: 7,
+              url: 'http://www.owecn.com/Life/20131101/2013110125134.html',
+              title: '希望她做一个对社会有用的人'
+            },
+            {
+              pic: 8,
+              url: 'http://www.owecn.com/Life/20111108/201111089071.html',
+              title: '我和媒体记者们不得不说的故事'
+            },
+            {
+              pic: 9,
+              url: 'http://www.owecn.com/Life/20130713/2013071323788.html',
+              title: '中村小学：人间处处有爱心'
+            }
+          ]
+        }
+
+        var picDisplays = template(data);
+        $('.display').append(picDisplays)
+      })();
 
     </script>
+    <script type="text/javascript" src="resources/thirdpart/fancybox/jquery.fancybox-1.3.4.pack.js"></script>
+    <script type="text/javascript" src="resources/thirdpart/fancybox/jquery.fancybox-1.3.4.js"></script>
+    
+    <script type="text/javascript">
+    (function(){
+      $(".fancybox").fancybox();
+    })();
+    </script>
+
   </body>
 </html>
