@@ -69,7 +69,26 @@
 
     <div class="row">
       <div class="container">
-      <div class="display"></div>      
+        <!-- 媒体关注 -->
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h3 class="panel-title">媒体关注</h3>
+          </div>
+          <div class="panel-body">
+            <div class="media"></div>
+          </div>
+        </div>
+        
+        <!-- 小品纪实 -->
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h3 class="panel-title">小品纪实</h3>
+          </div>
+          <div class="panel-body">
+            <div class="pieces"></div>
+          </div>
+        </div>
+
       </div>
     </div>
     <script id="pic-template" type="text/x-handlebars-template">
@@ -77,8 +96,8 @@
       {{#pics}}
       <div class="col-sm-6 col-md-4">
         <div class="thumbnail">
-          <a href="resources/images/display/{{pic}}.jpg" class=" fancybox"> 
-            <img src="resources/images/display/{{pic}}.jpg" alt="图片无法显示"/> 
+          <a href="{{pic}}" class=" fancybox"> 
+            <img src="{{pic}}" alt="图片无法显示"/> 
           </a>
           <div class="caption nolink" >
             <a href="{{url}}">{{title}}</a>
@@ -100,8 +119,12 @@
         var template = Handlebars.compile(source);
 
         //从display.js中加载数据
-        var picDisplays = template(displayData);
-        $('.display').append(picDisplays)
+        var mediaDisplays = template(mediaDisplayData);
+        $('.media').append(mediaDisplays)
+
+        var piecesDisplays = template(piecesDisplaysDisplayData);
+        $('.pieces').append(piecesDisplays)
+
       })();
 
     </script>
