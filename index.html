@@ -16,10 +16,10 @@
 
     <link rel="stylesheet" href="resources/thirdpart/fancybox/jquery.fancybox-1.3.4.css" type="text/css" media="screen" />
   </head>
-  <body>
+  <body data-spy="scroll" data-target=".navbar-example" id="home">
     
     <!-- header begin -->
-    <header class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <header class="navbar navbar-default navbar-fixed-top navbar-example" role="navigation">
       <div class="container">
         <div class="navbar-header">
           <a class="navbar-brand" href="#"><span class="glyphicon glyphicon-eye-open"></span>  感恩中国</a>
@@ -27,13 +27,13 @@
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
           <ul class="nav navbar-nav">
             <li class="active">
-              <a href="#"><span class="glyphicon glyphicon-home"></span> 首页</a>
+              <a href="#home"><span class="glyphicon glyphicon-home"></span> 首页</a>
             </li>
             <li>
-              <a href="second.html"><span class="glyphicon glyphicon-camera"></span> 媒体关注</a>
+              <a href="#media"><span class="glyphicon glyphicon-camera"></span> 媒体关注</a>
             </li>
             <li>
-              <a href="second.html"><span class="glyphicon glyphicon-edit"></span> 小品纪实</a>
+              <a href="#pieces"><span class="glyphicon glyphicon-edit"></span> 小品纪实</a>
             </li>
           </ul>
         </div>
@@ -70,7 +70,7 @@
     <div class="row">
       <div class="container">
         <!-- 媒体关注 -->
-        <div class="panel panel-default">
+        <div class="panel panel-default" id="media">
           <div class="panel-heading">
             <h3 class="panel-title">媒体关注</h3>
           </div>
@@ -80,7 +80,7 @@
         </div>
         
         <!-- 小品纪实 -->
-        <div class="panel panel-default">
+        <div class="panel panel-default" id="pieces">
           <div class="panel-heading">
             <h3 class="panel-title">小品纪实</h3>
           </div>
@@ -115,6 +115,8 @@
 
       (function() {
         
+        $('body').scrollspy({ target: '.navbar-example' });
+
         var source   = $("#pic-template").html();
         var template = Handlebars.compile(source);
 
@@ -122,7 +124,7 @@
         var mediaDisplays = template(mediaDisplayData);
         $('.media').append(mediaDisplays)
 
-        var piecesDisplays = template(piecesDisplaysDisplayData);
+        var piecesDisplays = template(piecesDisplaysData);
         $('.pieces').append(piecesDisplays)
 
       })();

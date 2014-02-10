@@ -190,7 +190,7 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, .lead {
 #carousel .flex-active-slide img {opacity: 1; cursor: default;}
 
 .nolink > a {
-	font-size: 13px;
+	font-size: 14px;
 	color: #000;
 	text-decoration: none;
 }
