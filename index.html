@@ -2,6 +2,9 @@
 <html>
   <head>
     <meta charset="UTF-8">
+
+    <title>感恩中国 - 感恩于心,报恩于行 ,但行好事,莫问前程</title>
+
     <link rel="stylesheet" href="resources/css/bootstrap.css" />
     <link rel="stylesheet" href="resources/css/site.min.css" />
     <link rel="stylesheet" href="resources/css/custom.css" />
@@ -10,45 +13,27 @@
     <script type="text/javascript" src="resources/thirdpart/fancybox/jquery.mousewheel-3.0.4.pack.js"></script>
     <script type="text/javascript" src="resources/js/handlebars.js"></script>
 
+
     <link rel="stylesheet" href="resources/thirdpart/fancybox/jquery.fancybox-1.3.4.css" type="text/css" media="screen" />
   </head>
   <body>
-    <audio src="resources/msc/music.mp3" autoplay="autoplay" hidden="hidden" loop="loop"></audio>
+    
     <!-- header begin -->
     <header class="navbar navbar-default navbar-fixed-top" role="navigation">
       <div class="container">
         <div class="navbar-header">
-          <a class="navbar-brand" href="#">感恩中国</a>
+          <a class="navbar-brand" href="#"><span class="glyphicon glyphicon-eye-open"></span>  感恩中国</a>
         </div>
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
           <ul class="nav navbar-nav">
             <li class="active">
-              <a href="#">首页</a>
+              <a href="#"><span class="glyphicon glyphicon-home"></span> 首页</a>
             </li>
             <li>
-              <a href="second.html">照片展示</a>
+              <a href="second.html"><span class="glyphicon glyphicon-camera"></span> 媒体关注</a>
             </li>
-            <li class="dropdown">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown">下拉菜单 <b class="caret"></b></a>
-              <ul class="dropdown-menu">
-                <li>
-                  <a href="#">Action</a>
-                </li>
-                <li>
-                  <a href="#">Another action</a>
-                </li>
-                <li>
-                  <a href="#">Something else here</a>
-                </li>
-                <li class="divider"></li>
-                <li>
-                  <a href="#">Separated link</a>
-                </li>
-                <li class="divider"></li>
-                <li>
-                  <a href="#">One more separated link</a>
-                </li>
-              </ul>
+            <li>
+              <a href="second.html"><span class="glyphicon glyphicon-edit"></span> 小品纪实</a>
             </li>
           </ul>
         </div>
@@ -60,7 +45,10 @@
       <div class="container" id="picContainer">
         <h1>感  恩  中  国</h1>
         <p> 
-          感恩于心&nbsp;&nbsp;报恩于行&nbsp;&nbsp;但行好事&nbsp;&nbsp;莫问前程
+          <span class="glyphicon glyphicon-heart-empty"></span> 感恩于心&nbsp;&nbsp;
+          <span class="glyphicon glyphicon-heart-empty"></span> 报恩于行&nbsp;&nbsp;
+          <span class="glyphicon glyphicon-heart-empty"></span> 但行好事&nbsp;&nbsp;
+          <span class="glyphicon glyphicon-heart-empty"></span> 莫问前程
         </p>
       </div>
     </div>
@@ -68,15 +56,15 @@
       <div class="container">
         <ul class="bc-social-buttons">
           <li>
-            <span class="label label-success">Bootstrap开发QQ群: </span>1234567
+            <audio src="resources/msc/music.mp3" controls autoplay loop>HTML5 audio not supported</audio>
           </li>
         </ul>
       </div>
     </div>
     
     <div class="projects-header page-header">
-      <h2>他们的事迹深深地打动着我们</h2>
-      <p>这些项目或者是对Bootstrap进行了有益的补充，或者是基于Bootstrap的</p>
+      <h2>他们的事迹深深地感动着我们</h2>
+      <p><span class="glyphicon glyphicon-heart"></span> 每个人都应该有知恩、感恩的心 <span class="glyphicon glyphicon-heart"></span></p>
     </div>
 
     <div class="row">
@@ -100,63 +88,19 @@
       {{/pics}}
       </div>
     </script>
+    
+    <script src="resources/js/display.js"></script>
+
     <script type="text/javascript" charset="utf-8">
+      
+
       (function() {
         
         var source   = $("#pic-template").html();
         var template = Handlebars.compile(source);
 
-        var data = {
-          pics: [
-            {
-              pic: 1, 
-              url: 'http://www.owecn.com/help/20130427/2013042722320.html', 
-              title: '长大后给爸爸妈妈幸福的家'
-            },
-            {
-              pic: 2,
-              url: 'http://www.owecn.com/Pieces/20090316/200903164649.html',
-              title: '我梦想着飞翔到更远的地方'
-            },
-            {
-              pic: 3,
-              url: 'http://www.owecn.com/Pieces/20070616/20070616806.html',
-              title: '路连向远方，改变了我们的生活！'
-            },
-            {
-              pic: 4,
-              url: 'http://www.owecn.com/Life/20140109/2014010926797.html',
-              title: '尤达村校：爱心是黎明前的一道曙光！'
-            },
-            {
-              pic: 5,
-              url: 'http://www.owecn.com/Life/20121118/2012111823803.html',
-              title: '花戛中学：给他们坚持读下去的力量'
-            },
-            {
-              pic: 6,
-              url: 'http://www.owecn.com/Life/20121115/2012111523815.html',
-              title: '福和希望小学：吃肉是孩子们的奢望'
-            },
-            {
-              pic: 7,
-              url: 'http://www.owecn.com/Life/20131101/2013110125134.html',
-              title: '希望她做一个对社会有用的人'
-            },
-            {
-              pic: 8,
-              url: 'http://www.owecn.com/Life/20111108/201111089071.html',
-              title: '我和媒体记者们不得不说的故事'
-            },
-            {
-              pic: 9,
-              url: 'http://www.owecn.com/Life/20130713/2013071323788.html',
-              title: '中村小学：人间处处有爱心'
-            }
-          ]
-        }
-
-        var picDisplays = template(data);
+        //从display.js中加载数据
+        var picDisplays = template(displayData);
         $('.display').append(picDisplays)
       })();
 
@@ -172,11 +116,9 @@
 
 
   <footer class="footer ">
-    <p>本网站所列开源项目的中文版文档全部由<a href="http://www.bootcss.com/">Bootstrap中文网</a>成员翻译整理，并全部遵循 <a href="http://creativecommons.org/licenses/by/3.0/" target="_blank">CC BY 3.0</a>协议发布。</p>
-    <p>Powered By <a href="http://www.ghostchina.com/" target="_blank" title="Ghost中文网">Ghost</a></p>
-    <p>
-      <a href="http://www.miibeian.gov.cn/" target="_blank">京备你妹的案号</a>
-    </p>
+    <p>©2014 感恩中国. All rights reserved. &nbsp;&nbsp;</p>
+    <p><span class="text-danger"><strong>声明：</strong></span>本网站所有内容均来自互联网，版权归原作者所有</p>
+    <p>Powered By <a href="http://www.ghostchina.com/" target="_blank" title="Ghost中文网">Bootstrap</a></p>
   </footer>
   </body>
 </html>

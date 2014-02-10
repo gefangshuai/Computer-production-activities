@@ -58,6 +58,11 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, .lead {
 	text-shadow: 0 0 10px rgba(255,255,255,.25);
 }
 
+.subhead {
+	text-align: left;
+	border-bottom: 1px solid #ddd;
+}
+
 /* Download button */
 .masthead .btn {
 	padding: 14px 24px;
@@ -188,8 +193,12 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, .lead {
 	font-size: 13px;
 	color: #000;
 	text-decoration: none;
-	text-align: center;
 }
 .nolink > a:link {color: #000}     /* 未访问的链接 */
-.nolink > a:hover {color: #000}    /* 当有鼠标悬停在链接上 */
+.nolink > a:hover {color: #9D1616}    /* 当有鼠标悬停在链接上 */
 .nolink > a:active {color: #000}
+
+/* 文章内容 */
+.content p{
+	 text-indent: 2em;
+}
