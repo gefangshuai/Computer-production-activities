@@ -1,0 +1,188 @@
+  <!DOCTYPE HTML>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>美丽中国：你见过如此美的晚霞吗-感恩中国</title>
+
+  <link rel="stylesheet" href="../../resources/css/bootstrap.css" />
+  <link rel="stylesheet" href="../../resources/css/site.min.css" />
+  <link rel="stylesheet" href="../../resources/css/custom.css" />
+  <script src="../../resources/js/jquery.js" type="text/javascript" charset="utf-8"></script>
+  <script src="../../resources/js/bootstrap.js" type="text/javascript" charset="UTF-8"></script>
+  <script type="text/javascript" src="../../resources/thirdpart/fancybox/jquery.mousewheel-3.0.4.pack.js"></script>
+  <script type="text/javascript" src="../../resources/js/handlebars.js"></script>
+
+  <script src="../../resources/thirdpart/audiojs/audio.min.js"></script>
+
+  <link rel="stylesheet" href="../../resources/thirdpart/fancybox/jquery.fancybox-1.3.4.css" type="text/css" media="screen" />
+</head>
+<body>
+
+  <!-- header begin -->
+  <header class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="#"><span class="glyphicon glyphicon-eye-open"></span>  感恩中国</a>
+      </div>
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav">
+          <li >
+            <a href="../../index.html"><span class="glyphicon glyphicon-home"></span> 首页</a>
+          </li>
+          <li>
+            <a href="../../index.html#media"><span class="glyphicon glyphicon-camera"></span> 媒体关注</a>
+          </li>
+          <li class="active">
+            <a href="../../index.html#pieces"><span class="glyphicon glyphicon-camera"></span> 小品纪实</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </header>
+  <!-- header end -->
+
+  <header class="jumbotron subhead margin50-t" id="overview">
+    <div class="container">
+      <h1>小品纪实</h1>
+      <p class="lead">品味真实生活，触碰心灵底线</p>
+    </div>
+  </header>
+  
+  <div class="row">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8">
+          <div class="panel panel-default"> 
+            <div class="panel-heading">
+              您的位置：
+              <a href="../../index.html">首页</a> >
+              <a href="#">小品纪实</a> > 
+              美丽中国：你见过如此美的晚霞吗
+            </div>
+            <div class="panel-body">
+              <div class="page-header">
+                <h2>美丽中国：你见过如此美的晚霞吗</h2>
+                <div>
+                  <span class="glyphicon glyphicon-user"></span> 张仁杰 
+                  &nbsp;&nbsp;&nbsp;&nbsp;
+                  <span class="glyphicon glyphicon-time"></span> 2006-09-13 01:16:24
+                </div>
+              </div>
+              <div class="content">
+                <blockquote>
+                  天空仿佛在告诉我们，不要怕黑暗，它在用它的光亮温暖我们，鼓励我们走过黑夜，迎向明日的朝阳。
+                </blockquote>
+                <p>
+                  <a href="1.jpg" class="thumbnail">
+                    <img src="1.jpg">
+                  </a>
+                </p>
+                <p>
+                  有时候不得不佩服天地造物，夕阳西下，虽是残阳，却能使云层变换得如此美丽。
+                </p>
+                <p>
+                  <a href="2.jpg" class="thumbnail">
+                    <img src="2.jpg">
+                  </a>
+                </p>
+                <p>通过残阳的余光，天空就是一幅大气磅礴的水墨画，房屋树木成了陪衬的剪影。</p>
+                <p>
+                  <a href="3.jpg" class="thumbnail">
+                    <img src="3.jpg">
+                  </a>
+                </p>
+                
+                <p> 就连在白天不那么惹人注意的枝叶，也仿佛披上了一层神秘的影子，显得生动起来。</p>
+
+                <p>
+                  <a href="4.jpg" class="thumbnail">
+                    <img src="4.jpg">
+                  </a>
+                </p>
+                
+                <p> 而在光线好的时候，那云层就透过光，显得厚重，顺着光源寻去，就好似寻着希望。</p>
+
+                <p>
+                  <a href="5.jpg" class="thumbnail">
+                    <img src="5.jpg">
+                  </a>
+                </p>
+                
+                <p> 我喜欢这美丽的晚空，这快要进入黑暗前的光芒，是那么的流光溢彩。</p>
+
+                <p>
+                  <a href="6.jpg" class="thumbnail">
+                    <img src="6.jpg">
+                  </a>
+                </p>
+                
+                <p> 天空仿佛在告诉我们，不要怕黑暗，它在用它的光亮温暖我们，鼓励我们走过黑夜，迎向明日的朝阳。</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="col-md-4">
+          <div class="panel panel-default">
+            <div class="panel-heading">媒体关注</div>
+            <div class="panel-body slide-media">
+            </div>
+          </div>
+
+          <div class="panel panel-default">
+            <div class="panel-heading">小品纪实</div>
+            <div class="panel-body slide-pieces">
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <script id="pic-template" type="text/x-handlebars-template">
+    {{#medias}}
+    <div class="media">
+      <a class="pull-left" href="#">
+        <img class="media-object" src="{{pic}}" alt="64x64" style="width: 64px; height: 64px;">
+      </a>
+      <div class="media-body">
+        <p><a href="{{url}}"> {{title}} </a></p>
+      </div>
+    </div>
+    {{/medias}}
+  </script>
+
+  <script src="../../resources/js/slide.js"></script>
+  <script type="text/javascript" charset="utf-8">
+    (function() {
+            
+      var source   = $("#pic-template").html();
+      var template = Handlebars.compile(source);
+
+      //从display.js中加载数据
+      var mediaDisplays = template(mediaSlideData66);
+      $('.slide-media').append(mediaDisplays)
+
+      var piecesDisplays = template(piecesSlideData66);
+      $('.slide-pieces').append(piecesDisplays)
+
+    })();
+  </script>
+  <script type="text/javascript" src="../../resources/thirdpart/fancybox/jquery.fancybox-1.3.4.pack.js"></script>
+  <script type="text/javascript" src="../../resources/thirdpart/fancybox/jquery.fancybox-1.3.4.js"></script>
+
+  <script type="text/javascript">
+    (function(){
+      $(".thumbnail").fancybox();
+    })();
+  </script>
+
+  <footer class="footer ">
+    <p>©2014 感恩中国. All rights reserved. &nbsp;&nbsp;</p>
+    <p><span class="text-danger"><strong>声明：</strong></span>本网站所有内容均来自互联网，版权归原作者所有</p>
+    <p>Powered By <a href="#" title="Bootstrap">Bootstrap</a></p>
+  </footer>
+</body>
+</html>
