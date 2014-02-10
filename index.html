@@ -115,7 +115,6 @@
 
       (function() {
         
-        $('body').scrollspy({ target: '.navbar-example' });
 
         var source   = $("#pic-template").html();
         var template = Handlebars.compile(source);
@@ -127,6 +126,7 @@
         var piecesDisplays = template(piecesDisplaysData);
         $('.pieces').append(piecesDisplays)
 
+        
       })();
 
     </script>
@@ -135,6 +135,7 @@
     
     <script type="text/javascript">
     (function(){
+      $('body').scrollspy({ target: '.navbar-example' });
       $(".fancybox").fancybox();
     })();
     </script>
